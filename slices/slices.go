@@ -23,4 +23,6 @@ func main() {
 
 	copy(a[1:], d[3:])           // copy some slice elements from d to a
 	fmt.Printf("9: a = %v\n", a) // show resulting a
+
+	fmt.Printf("10: len(a) = %d\n", len(a)) // len() returns the length of a slice (same for arrays)
 }
