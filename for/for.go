@@ -22,4 +22,14 @@ func main() {
 		}
 		break // the only way to get out of here
 	}
+
+outerloop: // loops can be named to address them in a break/continue
+	for {
+		for m := 0; m < 10; m++ {
+			fmt.Printf("m = %d\n", m)
+			if m == 3 {
+				break outerloop
+			}
+		}
+	}
 }

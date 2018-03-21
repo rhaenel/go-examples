@@ -3,12 +3,15 @@ package main
 import "fmt"
 
 func main() {
+	// maps are created by the internal make(...) call
 	m := make(map[string]int)
 
+	// set some values
 	m["apples"] = 0
 	m["oranges"] = 3
 	m["peaches"] = 1
 
+	// output the map (generic type %v)
 	fmt.Printf("1: %v\n", m)
 
 	apples, present := m["apples"] // second return values signales if the key is present
